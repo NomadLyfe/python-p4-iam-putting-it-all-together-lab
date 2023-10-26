@@ -15,7 +15,7 @@ function LoginForm({ onLogin }) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({ 'username': username, 'password': password }),
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
